@@ -1,0 +1,25 @@
+Created: 6 March 2015, 11:38
+
+
+
+  topo     = F/T
+  smooth   = F (Kalman filtering with loc.variance=2 m, spd.variance=0.1 m/s)
+  type     = 'hist'
+  
+  features = 		 {s1}	speed  				#  50
+  			 {s10}	speed      | abs(rel.angle)  	#  200
+  			 {t1}	tang.accel  			#  50
+  			 {t10}	tang.accel | abs(rel.angle)  	#  500
+  			 {n1}	norm.accel  			#  50
+  			 {n10}	norm.accel | abs(rel.angle)  	#  500
+
+  ranges = 	 	 {s1}		(0,50,1)		X1-X50
+  		   	 {s10}		(0,40,1)   | (0,1,0.2)	X51-X250
+  		   	 {t1}		(-5,5,0.2)		X251-300
+  		     	 {t10}		(-5,5,0.2) | (0,1,0.1)	X301-X800
+  		     	 {n1}		(0,5,0.1)		X801-850
+  		     	 {n10}		(0,5,0.1)  | (0,1,0.1)	X851-1350
+			 {tdist}				Y1
+			 {topo rel.angle}			Y2-Y11
+			 {ttime}				ttime
+  Total	 =		 1362

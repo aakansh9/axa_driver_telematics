@@ -1,0 +1,47 @@
+Created: 13 March 2015, 14:25
+
+
+
+  topo     = F/T
+  smooth   = T (Kalman filtering with loc.variance=2 m, spd.variance=0.1 m/s)
+  type     = 'hist'
+  
+  colnames(res) <- c('tdist', 'st', 'msd', 'ttime',
+                     paste0('s',1:40), paste0('t',1:50), paste0('n',1:30),
+                     'avgs', 'avgt', 'avgn',
+                     paste0('msgr',1:4), paste0('mtgr',1:4), paste0('mngr',1:4),
+                     paste0('vsgr',1:4), paste0('vtgr',1:4), paste0('vngr',1:4),
+                     paste0('sgr',1:160), paste0('tgr',1:200), paste0('ngr',1:120),
+                     paste0('r',1:10))
+
+topo=F, smooth=T
+
+s(0,40,1)	| avgs
+t(-5,5,0.2)	| avgt
+n(0,3,0.1)	| avgn
+
+tdist
+st
+msd
+ttime
+
+msgr (mean speed given absolute relative angle in (0,1,0.25)
+mtgr
+mngr
+
+vsgr (variance of speed given absolute rel.angle in (0,1,0.25)
+vtgr
+vngr
+
+sgr (percent time s in (0,40,1) given rel.angle in (0,1,0.25)
+tgr  (-5,5,0.2) | (0,1,0.1)
+ngr  (0,3,0.1)	| (0,1,0.1)
+———————————
+
+topo=T, smooth=T
+
+r (percent distance given abs(rel.angle) in (0,1,0.1)
+———————————
+
+  Total	 =		 641
+———————————
