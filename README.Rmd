@@ -2,10 +2,9 @@
 title: "Kaggle AXA Driver Telematics Challenge"
 author: "Aakansh Gupta"
 date: "March 18, 2015"
-output: html_document
 ---
 
-This repo contains submission code and ideas for the [Driver Telematics Challenge](https://www.kaggle.com/c/axa-driver-telematics-analysis) hosted by Kaggle(https://www.kaggle.com) and AXA(http://www.axa.com/en/).
+This repo contains submission code and ideas for the [Driver Telematics Challenge](https://www.kaggle.com/c/axa-driver-telematics-analysis) hosted by [Kaggle](https://www.kaggle.com) and [AXA](http://www.axa.com/en/).
 
 ### Hardware and OS Used
 MacBook Pro (Mid 2014)
@@ -20,23 +19,23 @@ Rstudio Version 0.98.1091 – © 2009-2014 RStudio, Inc.
 ### File Structure
 1. functions/ contains all the functions necessary.
   + **to featurize**
-      a. Driver.Attr.Behav.R
-      b. Driver.Attr.Topo.R
-      c. Driver.Discretize.R
-      d. Driver.Feat.R
-      e. Trip.Feat.R
-      f. Smooth.Kalman.R
+      + Driver.Attr.Behav.R
+      + Driver.Attr.Topo.R
+      + Driver.Discretize.R
+      + Driver.Feat.R
+      + Trip.Feat.R
+      + Smooth.Kalman.R
   + **to model**
-      a. Nclass.R
-      b. Pclass.R
-      c. Ensemble.Avg.R
-      d. Short.Trips.R
-      e. Load.Featurefiles.R
+      + Nclass.R
+      + Pclass.R
+      + Ensemble.Avg.R
+      + Short.Trips.R
+      + Load.Featurefiles.R
   + **to visualize**
-      a. Visualize.Attr.R
+      + Visualize.Attr.R
   + **Others**
-      a. Jumps.Find.R
-      b. Subm.Order.R
+      + Jumps.Find.R
+      + Subm.Order.R
      
 2. submissions/ contains all the submissions of the author in the contest.
 
