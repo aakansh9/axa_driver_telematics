@@ -1,6 +1,6 @@
 axa_driver_telematics
 ===============================
-*ML compeitition at (Kaggle)[https://www.kaggle.com/c/axa-driver-telematics-analysis/overview]*
+*ML compeitition at [Kaggle](https://www.kaggle.com/c/axa-driver-telematics-analysis/overview)*
 
 ---
 title: "Kaggle AXA Driver Telematics Challenge"
